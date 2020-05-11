@@ -7,7 +7,7 @@ application = Flask(__name__)
 
 @application.route('/', methods=['GET'])
 def get():
-    return Response(json.dumps({'Output': 'Hello World'}), mimetype='application/json', status=200)
+    return Response(json.dumps({'Output': 'This is my first update'}), mimetype='application/json', status=200)
 
 @application.route('/', methods=['POST'])
 def post():
